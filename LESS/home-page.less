@@ -9,9 +9,9 @@
     overflow-x: hidden;
     overflow-y: auto;
     position: fixed;
-    text-align: right;
+    text-align: center;
     top: 0;
-    width: 24.7rem;
+    width: 20rem;
     z-index: 10000;
 }
 
@@ -32,7 +32,7 @@
 
 #navbar nav > ul > li {
     transform: translateY(0);
-    margin: 2.5rem 0 0 0;
+    margin: 1rem 0 0 0;
     opacity: 1;
     padding: 0;
     position: relative;
@@ -60,3 +60,27 @@
     text-transform: uppercase;
 }
 
+#navbar + #wrapper {
+    margin-left: 20rem;
+}
+
+.wrapper.fullscreen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.wrapper.intro-color {
+    background-color: @intro;
+}
+
+.wrapper {
+    position: relative;
+}
+
+.wrapper > .inner-text {
+    padding: 6rem 6rem 4rem 6rem;
+    max-width: 100%;
+    width: 75rem;
+}
