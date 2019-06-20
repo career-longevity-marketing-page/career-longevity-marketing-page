@@ -145,6 +145,9 @@ p {
   font-size: 2rem;
   font-family: 'Roboto', sans-serif;
 }
+label {
+  font-family: 'Roboto', sans-serif;
+}
 /* navbar */
 #navbar {
   padding: 3.5rem 3.5rem 0.7rem 3.5rem;
@@ -236,17 +239,22 @@ p {
   padding: 20px 200px;
   width: 80%;
 }
+.contact .contact-container p {
+  text-align: center;
+  padding: 20px 0;
+}
 .contact .name-email {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
+  padding: 30px 0;
 }
 .contact .name-email .name,
 .contact .name-email .email {
   display: flex;
   flex-direction: column;
-  width: 40%;
+  width: 48%;
 }
 .contact label {
   padding: 15px 15px 15px 0;
@@ -254,18 +262,34 @@ p {
 }
 .contact input {
   padding: 15px 10px;
-  background: rgba(255, 255, 255, 0.16);
-  border: 1px solid rgba(255, 255, 255, 0.253);
+  background: none;
+  border: 2px solid #c7c7c7;
   border-radius: 8px;
+  font-size: 2rem;
+  color: #fff;
 }
 .contact .message {
   display: flex;
   flex-direction: column;
 }
 .contact .message textarea {
-  background: rgba(255, 255, 255, 0.16);
-  border: 1px solid rgba(255, 255, 255, 0.253);
+  height: 300px;
+  background: none;
+  border: 2px solid #c7c7c7;
   border-radius: 8px;
+  padding: 15px 10px;
+  font-size: 3rem;
+  color: #fff;
+}
+.contact .button {
+  margin-top: 30px;
+  text-align: center;
+}
+.contact .button input {
+  color: #fff;
+  font-size: 2rem;
+  padding: 20px 40px;
+  cursor: pointer;
 }
 footer {
   width: 100%;
