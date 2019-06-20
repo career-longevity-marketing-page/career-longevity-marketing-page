@@ -132,6 +132,22 @@ table {
 html {
   font-size: 62.5%;
 }
+h1 {
+  font-size: 5rem;
+  font-family: 'Anton', sans-serif;
+}
+h2 {
+  font-size: 4rem;
+  padding: 10px;
+  font-family: 'Anton', sans-serif;
+}
+p {
+  font-size: 2rem;
+  font-family: 'Roboto', sans-serif;
+}
+label {
+  font-family: 'Roboto', sans-serif;
+}
 /* navbar */
 #navbar {
   padding: 3.5rem 3.5rem 0.7rem 3.5rem;
@@ -208,6 +224,73 @@ html {
   max-width: 100%;
   width: 75rem;
 }
+.contact {
+  width: 100%;
+  padding: 50px;
+  background: #C61632;
+  color: #fff;
+}
+.contact .contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact .contact-container form {
+  padding: 20px 200px;
+  width: 80%;
+}
+.contact .contact-container p {
+  text-align: center;
+  padding: 20px 0;
+}
+.contact .name-email {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding: 30px 0;
+}
+.contact .name-email .name,
+.contact .name-email .email {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+}
+.contact label {
+  padding: 15px 15px 15px 0;
+  font-size: 2rem;
+}
+.contact input {
+  padding: 15px 10px;
+  background: none;
+  border: 2px solid #c7c7c7;
+  border-radius: 8px;
+  font-size: 2rem;
+  color: #fff;
+}
+.contact .message {
+  display: flex;
+  flex-direction: column;
+}
+.contact .message textarea {
+  height: 300px;
+  background: none;
+  border: 2px solid #c7c7c7;
+  border-radius: 8px;
+  padding: 15px 10px;
+  font-size: 3rem;
+  color: #fff;
+}
+.contact .button {
+  margin-top: 30px;
+  text-align: center;
+}
+.contact .button input {
+  color: #fff;
+  font-size: 2rem;
+  padding: 20px 40px;
+  cursor: pointer;
+}
 footer {
   width: 100%;
   display: flex;
@@ -230,4 +313,5 @@ footer .social-icons li .fab {
 }
 footer p {
   color: #fff;
+  font-size: 1rem;
 }
