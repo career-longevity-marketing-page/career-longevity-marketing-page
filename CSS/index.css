@@ -134,7 +134,7 @@ html {
 }
 /* navbar */
 #navbar {
-  padding: 2.5em 2.5em 0.5em 2.5em;
+  padding: 3.5rem 3.5rem 0.7rem 3.5rem;
   background: #0F6DB3;
   cursor: default;
   height: 100vh;
@@ -142,9 +142,9 @@ html {
   overflow-x: hidden;
   overflow-y: auto;
   position: fixed;
-  text-align: right;
+  text-align: center;
   top: 0;
-  width: 18em;
+  width: 20rem;
   z-index: 10000;
 }
 #navbar > .inner-text {
@@ -162,7 +162,7 @@ html {
 }
 #navbar nav > ul > li {
   transform: translateY(0);
-  margin: 1.5em 0 0 0;
+  margin: 1rem 0 0 0;
   opacity: 1;
   padding: 0;
   position: relative;
@@ -176,17 +176,37 @@ html {
   opacity: 1;
   width: 100%;
   border: 0;
-  color: white;
+  color: #fff;
   display: block;
-  font-size: 0.6em;
+  font-size: 0.8rem;
   font-weight: bold;
-  letter-spacing: 0.25em;
+  letter-spacing: 0.2rem;
   line-height: 1.75;
   outline: 0;
-  padding: 1.35em 0;
+  padding: 1.2rem 0;
   position: relative;
   text-decoration: none;
   text-transform: uppercase;
+}
+#navbar + #wrapper {
+  margin-left: 20rem;
+}
+.wrapper.fullscreen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+.wrapper.intro-color {
+  background-color: #1F4488;
+}
+.wrapper {
+  position: relative;
+}
+.wrapper > .inner-text {
+  padding: 6rem 6rem 4rem 6rem;
+  max-width: 100%;
+  width: 75rem;
 }
 footer {
   width: 100%;
