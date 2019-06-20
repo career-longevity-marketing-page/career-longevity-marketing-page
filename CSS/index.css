@@ -132,6 +132,18 @@ table {
 html {
   font-size: 62.5%;
 }
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.contact form {
+  padding: 20px 200px;
+}
+.contact .name-email {
+  display: flex;
+}
 footer {
   width: 100%;
   display: flex;
