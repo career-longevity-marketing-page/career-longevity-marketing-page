@@ -1,31 +1,51 @@
 .contact {
-    .flex(column);
-    align-items: center;
     width: 100%;
     padding: 50px;
-    background: @contact-form; 
-    color: @main-font; 
+    background: @contact-form;
+    color: @main-font;
 
-    form {
-        padding: 20px 200px; 
+    .contact-container {
+        .flex(column);
+        align-items: center;
+
+        form {
+            padding: 20px 200px;
+            width: 80%;
+        }
     }
 
-
     .name-email {
-        .flex(); 
+        .flex();
+        justify-content: space-between;
+        width: 100%;
 
-        .name {
+        .name, .email {
             .flex(column);
+            width: 40%;
         }
+    }
 
-        .email {
-          .flex(column);
-        }
+    label {
+        padding: 15px 15px 15px 0;
+        font-size: 2rem;
+    }
+
+    input {
+        padding: 15px 10px;
+        background: @inputs;
+        border: 1px solid rgba(255, 255, 255, 0.253);
+        border-radius: 8px;
     }
 
 
     .message {
         .flex(column);
+
+        textarea {
+            background: @inputs;
+            border: 1px solid rgba(255, 255, 255, 0.253);
+            border-radius: 8px;
+        }
     }
 
 

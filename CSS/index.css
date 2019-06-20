@@ -134,13 +134,16 @@ html {
 }
 h1 {
   font-size: 5rem;
+  font-family: 'Anton', sans-serif;
 }
 h2 {
   font-size: 4rem;
   padding: 10px;
+  font-family: 'Anton', sans-serif;
 }
 p {
   font-size: 2rem;
+  font-family: 'Roboto', sans-serif;
 }
 /* navbar */
 #navbar {
@@ -219,32 +222,50 @@ p {
   width: 75rem;
 }
 .contact {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   width: 100%;
   padding: 50px;
   background: #C61632;
   color: #fff;
 }
-.contact form {
+.contact .contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact .contact-container form {
   padding: 20px 200px;
+  width: 80%;
 }
 .contact .name-email {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
 }
-.contact .name-email .name {
-  display: flex;
-  flex-direction: column;
-}
+.contact .name-email .name,
 .contact .name-email .email {
   display: flex;
   flex-direction: column;
+  width: 40%;
+}
+.contact label {
+  padding: 15px 15px 15px 0;
+  font-size: 2rem;
+}
+.contact input {
+  padding: 15px 10px;
+  background: rgba(255, 255, 255, 0.16);
+  border: 1px solid rgba(255, 255, 255, 0.253);
+  border-radius: 8px;
 }
 .contact .message {
   display: flex;
   flex-direction: column;
+}
+.contact .message textarea {
+  background: rgba(255, 255, 255, 0.16);
+  border: 1px solid rgba(255, 255, 255, 0.253);
+  border-radius: 8px;
 }
 footer {
   width: 100%;
