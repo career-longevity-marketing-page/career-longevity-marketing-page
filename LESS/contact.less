@@ -1,20 +1,31 @@
 .contact {
-    display: flex;
-    flex-direction: column;
+    .flex(column);
     align-items: center;
     width: 100%;
+    padding: 50px;
+    background: @contact-form; 
+    color: @main-font; 
 
     form {
-        padding: 20px 200px;      
+        padding: 20px 200px; 
     }
 
 
     .name-email {
-        display: flex;
+        .flex(); 
+
+        .name {
+            .flex(column);
+        }
 
         .email {
-        
+          .flex(column);
         }
+    }
+
+
+    .message {
+        .flex(column);
     }
 
 

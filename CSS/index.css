@@ -132,17 +132,15 @@ table {
 html {
   font-size: 62.5%;
 }
-.contact {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
+h1 {
+  font-size: 5rem;
 }
-.contact form {
-  padding: 20px 200px;
+h2 {
+  font-size: 4rem;
+  padding: 10px;
 }
-.contact .name-email {
-  display: flex;
+p {
+  font-size: 2rem;
 }
 /* navbar */
 #navbar {
@@ -200,6 +198,34 @@ html {
   text-decoration: none;
   text-transform: uppercase;
 }
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 50px;
+  background: #C61632;
+  color: #fff;
+}
+.contact form {
+  padding: 20px 200px;
+}
+.contact .name-email {
+  display: flex;
+  flex-direction: row;
+}
+.contact .name-email .name {
+  display: flex;
+  flex-direction: column;
+}
+.contact .name-email .email {
+  display: flex;
+  flex-direction: column;
+}
+.contact .message {
+  display: flex;
+  flex-direction: column;
+}
 footer {
   width: 100%;
   display: flex;
@@ -222,4 +248,5 @@ footer .social-icons li .fab {
 }
 footer p {
   color: #fff;
+  font-size: 1rem;
 }
