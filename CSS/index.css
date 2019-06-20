@@ -132,3 +132,26 @@ table {
 html {
   font-size: 62.5%;
 }
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  background: #062F4E;
+}
+footer .social-icons {
+  display: flex;
+  padding: 40px;
+}
+footer .social-icons li {
+  margin: 0 30px;
+  font-size: 2rem;
+}
+footer .social-icons li .fab {
+  text-decoration: none;
+  color: #0F6DB3;
+}
+footer p {
+  color: #fff;
+}
