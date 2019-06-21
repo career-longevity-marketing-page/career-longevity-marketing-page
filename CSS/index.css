@@ -215,7 +215,6 @@ label {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  align-items: center;
 }
 .contact .contact-container form {
   width: 40%;
@@ -277,6 +276,28 @@ label {
   font-size: 2rem;
   padding: 20px 40px;
   cursor: pointer;
+}
+.contact address {
+  width: 25%;
+  padding: 60px 0 0;
+}
+.contact address :first-child {
+  margin-top: 20px;
+}
+.contact address .location,
+.contact address .phone-number,
+.contact address .email {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+.contact address .fas {
+  font-size: 3rem;
+}
+.contact address hr {
+  width: 100%;
 }
 /* navbar */
 #navbar {
