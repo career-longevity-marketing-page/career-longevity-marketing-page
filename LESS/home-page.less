@@ -37,6 +37,15 @@
     background-color: @white;
 }
 
+#features > section > img {
+    background-position: center center;
+    background-size: cover;
+    border-radius: 0;
+    display: block;
+    position: relative;
+    width: 31rem;
+}
+
 .mvps > section {
     display: flex;
     flex-direction: row;
@@ -44,11 +53,10 @@
 }
 
 .mvps > section > .feature {
+    padding: 8rem 6rem 4rem 6rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 50rem;
-    padding: 4em 4em 2em 4em;
 }
 
 .spotlights > section > .feature > .inner-text {
@@ -57,16 +65,10 @@
 
 #feature2 {
     background-color: @feature2;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 #feature3 {
     background-color: @feature3;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 #features > section > div > div > h2 {
@@ -77,4 +79,9 @@
 
 #features > section > div > div > p {
     margin: 0 0 2.5rem 0;
+}
+
+#features > section > div > div > ul > li > a {
+    .button-style2;
+    display: inline-block; 
 }

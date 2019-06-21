@@ -197,32 +197,33 @@ label {
 .wrapper.feature-color {
   background-color: #fff;
 }
+#features > section > img {
+  background-position: center center;
+  background-size: cover;
+  border-radius: 0;
+  display: block;
+  position: relative;
+  width: 31rem;
+}
 .mvps > section {
   display: flex;
   flex-direction: row;
   min-height: 22.5rem;
 }
 .mvps > section > .feature {
+  padding: 8rem 6rem 4rem 6rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 50rem;
-  padding: 4em 4em 2em 4em;
 }
 .spotlights > section > .feature > .inner-text {
   opacity: 1;
 }
 #feature2 {
   background-color: #f2f2f2;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 #feature3 {
   background-color: #e6e6e6;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 #features > section > div > div > h2 {
   line-height: 1.5rem;
@@ -231,6 +232,28 @@ label {
 }
 #features > section > div > div > p {
   margin: 0 0 2.5rem 0;
+}
+#features > section > div > div > ul > li > a {
+  border: solid 2px;
+  border-color: black;
+  border-radius: 8px;
+  background-color: transparent;
+  color: black;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  height: calc(4rem + 2px);
+  letter-spacing: 0.2rem;
+  line-height: 4rem;
+  outline: 0;
+  padding: 0 1.75rem;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+  display: inline-block;
 }
 .contact {
   width: 100%;
