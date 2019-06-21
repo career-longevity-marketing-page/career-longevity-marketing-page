@@ -148,6 +148,52 @@ p {
 label {
   font-family: 'Roboto', sans-serif;
 }
+.wrapper.fullscreen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+.wrapper.intro-color {
+  background-color: #1F4488;
+}
+.wrapper {
+  position: relative;
+}
+.wrapper > .inner-text {
+  padding: 6rem 6rem 4rem 6rem;
+  max-width: 100%;
+  width: 75rem;
+  color: #fff;
+}
+#introduction > div > h1 {
+  margin: 0 0 1.5rem 0;
+}
+#introduction > div > p {
+  margin: 0 0 2.5rem 0;
+}
+#introduction > div > ul > li > a {
+  border: solid 2px;
+  border-color: #c7c7c7;
+  border-radius: 8px;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  height: calc(4rem + 2px);
+  letter-spacing: 0.2rem;
+  line-height: 4rem;
+  outline: 0;
+  padding: 0 1.75rem;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+  display: inline-block;
+}
 /* navbar */
 #navbar {
   padding: 3.5rem 3.5rem 0.7rem 3.5rem;
@@ -194,8 +240,9 @@ label {
   border: 0;
   color: #fff;
   display: block;
-  font-size: 0.8rem;
-  font-weight: bold;
+  font-size: 1.6rem;
+  font-family: 'Anton', sans-serif;
+  font-weight: normal;
   letter-spacing: 0.2rem;
   line-height: 1.75;
   outline: 0;
@@ -206,23 +253,6 @@ label {
 }
 #navbar + #wrapper {
   margin-left: 20rem;
-}
-.wrapper.fullscreen {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-height: 100vh;
-}
-.wrapper.intro-color {
-  background-color: #1F4488;
-}
-.wrapper {
-  position: relative;
-}
-.wrapper > .inner-text {
-  padding: 6rem 6rem 4rem 6rem;
-  max-width: 100%;
-  width: 75rem;
 }
 .contact {
   width: 100%;
