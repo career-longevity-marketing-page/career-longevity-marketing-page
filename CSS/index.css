@@ -341,9 +341,7 @@ label {
 .contact address {
   width: 25%;
   padding: 60px 0 0;
-}
-.contact address :first-child {
-  margin-top: 20px;
+  margin-top: 35px;
 }
 .contact address .location,
 .contact address .phone-number,
