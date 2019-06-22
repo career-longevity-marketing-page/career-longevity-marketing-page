@@ -141,6 +141,9 @@ h2 {
   padding: 10px;
   font-family: 'Anton', sans-serif;
 }
+h3 {
+  font-family: 'Anton', sans-serif;
+}
 p {
   font-size: 2rem;
   font-family: 'Roboto', sans-serif;
@@ -357,6 +360,84 @@ label {
 }
 .contact address hr {
   width: 100%;
+}
+.top-bar {
+  padding: 70px;
+  background: #C61632;
+}
+.testimonials {
+  width: 100%;
+}
+.testimonials .carousel-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.testimonials .carousel-container h1 {
+  margin-top: 60px;
+  color: #292929;
+}
+.testimonials .carousel-container hr {
+  margin-bottom: 60px;
+  width: 10%;
+  border: 2px solid #C61632;
+}
+.testimonials .carousel-container .circle-navigation {
+  margin: 20px 0 50px;
+}
+.testimonials .carousel-container .circle-navigation i {
+  margin: 0 5px;
+  color: #00000071;
+}
+.carousel {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+}
+.carousel .arrow {
+  font-size: 5rem;
+  margin: 0 50px;
+  color: #292929;
+}
+.carousel .main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.carousel .main-content img {
+  width: 170px;
+  margin-bottom: 60px;
+  border-radius: 100px;
+}
+.carousel .main-content p {
+  margin: 30px 0;
+  color: #a7a7a7;
+}
+.carousel .main-content p span {
+  color: #C61632;
+}
+.cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 100px 0;
+}
+.cta h3 {
+  font-size: 3rem;
+}
+.cta button {
+  margin: 20px 0;
+  background: #C61632;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 2rem;
+  padding: 20px 40px;
+  cursor: pointer;
 }
 /* navbar */
 #navbar {
