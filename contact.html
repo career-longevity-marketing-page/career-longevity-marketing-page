@@ -16,6 +16,10 @@
     <!-- GOOGLE FONTS -->
     <link href="https://fonts.googleapis.com/css?family=Anton|Roboto&display=swap" rel="stylesheet">
 
+    <!-- JAVSCRIPT IMPORT -->
+    <!-- defer is needed unless you put the script at the bottom of the body tag -->
+    <script defer src="/components/mobile-drop-down.js"></script>
+
 </head>
 
 <body>
@@ -24,8 +28,9 @@
 
         <!-- NAVIGATION -->
         <section id="navbar">
-            <div class="inner-text">
-                <nav>
+            <div class="inner-text dropdown">
+                <div class="dropdown-button"><i class="fas fa-bars"></i></div>
+                <nav class="dropdown-content">
                     <ul>
                         <li><a href="index.html">HOME</a></li>
                         <li><a href="contact.html">CONTACT US</a></li>

@@ -280,8 +280,20 @@ label {
   flex-direction: row;
   justify-content: space-evenly;
 }
+@media (max-width: 500px) {
+  .contact .contact-container .contact-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .contact .contact-container form {
   width: 40%;
+}
+@media (max-width: 500px) {
+  .contact .contact-container form {
+    width: 100%;
+  }
 }
 .contact .contact-container p {
   text-align: center;
@@ -300,15 +312,33 @@ label {
   width: 100%;
   padding: 30px 0;
 }
+@media (max-width: 500px) {
+  .contact .name-email {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .contact .name-email .name,
 .contact .name-email .email {
   display: flex;
   flex-direction: column;
   width: 48%;
 }
+@media (max-width: 500px) {
+  .contact .name-email .name,
+  .contact .name-email .email {
+    width: 100%;
+    text-align: center;
+  }
+}
 .contact label {
   padding: 15px 15px 15px 0;
   font-size: 2rem;
+}
+@media (max-width: 500px) {
+  .contact label {
+    font-size: 3rem;
+  }
 }
 .contact input {
   padding: 15px 10px;
@@ -321,6 +351,11 @@ label {
 .contact .message {
   display: flex;
   flex-direction: column;
+}
+@media (max-width: 500px) {
+  .contact .message {
+    text-align: center;
+  }
 }
 .contact .message textarea {
   height: 300px;
@@ -335,16 +370,31 @@ label {
   margin-top: 30px;
   text-align: center;
 }
+@media (max-width: 500px) {
+  .contact .button {
+    width: 100%;
+  }
+}
 .contact .button input {
   color: #fff;
   font-size: 2rem;
   padding: 20px 40px;
   cursor: pointer;
 }
+@media (max-width: 500px) {
+  .contact .button input {
+    width: 100%;
+  }
+}
 .contact address {
   width: 25%;
   padding: 60px 0 0;
   margin-top: 35px;
+}
+@media (max-width: 500px) {
+  .contact address {
+    width: 100%;
+  }
 }
 .contact address .location,
 .contact address .phone-number,
@@ -454,6 +504,13 @@ label {
   width: 20rem;
   z-index: 10000;
 }
+@media (max-width: 500px) {
+  #navbar {
+    height: auto;
+    width: 100%;
+    padding: 0;
+  }
+}
 #navbar > .inner-text {
   display: flex;
   flex-direction: column;
@@ -498,6 +555,36 @@ label {
 }
 #navbar + #wrapper {
   margin-left: 20rem;
+}
+@media (max-width: 500px) {
+  #navbar + #wrapper {
+    margin-left: 0;
+    margin-top: 70px;
+  }
+}
+.dropdown .dropdown-button {
+  display: none;
+}
+@media (max-width: 500px) {
+  .dropdown .dropdown-button {
+    display: block;
+    cursor: pointer;
+    padding: 20px;
+  }
+}
+.dropdown .dropdown-button .fas {
+  font-size: 4rem;
+  color: #fff;
+}
+@media (max-width: 500px) {
+  .dropdown .dropdown-content {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .dropdown .toggle-content {
+    display: block;
+  }
 }
 footer {
   width: 100%;
