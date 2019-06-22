@@ -458,7 +458,7 @@ label {
   #navbar {
     height: auto;
     width: 100%;
-    padding: 20px;
+    padding: 0;
   }
 }
 #navbar > .inner-text {
@@ -509,7 +509,7 @@ label {
 @media (max-width: 500px) {
   #navbar + #wrapper {
     margin-left: 0;
-    margin-top: 80px;
+    margin-top: 70px;
   }
 }
 .dropdown .dropdown-button {
@@ -519,7 +519,7 @@ label {
   .dropdown .dropdown-button {
     display: block;
     cursor: pointer;
-    padding: 10px;
+    padding: 20px;
   }
 }
 .dropdown .dropdown-button .fas {
