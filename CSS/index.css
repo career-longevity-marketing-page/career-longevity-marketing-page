@@ -454,6 +454,12 @@ label {
   width: 20rem;
   z-index: 10000;
 }
+@media (max-width: 500px) {
+  #navbar {
+    height: 10vh;
+    width: 100%;
+  }
+}
 #navbar > .inner-text {
   display: flex;
   flex-direction: column;
@@ -498,6 +504,29 @@ label {
 }
 #navbar + #wrapper {
   margin-left: 20rem;
+}
+@media (max-width: 500px) {
+  #navbar + #wrapper {
+    margin-left: 0;
+  }
+}
+.dropdown .dropdown-button {
+  display: none;
+}
+@media (max-width: 500px) {
+  .dropdown .dropdown-button {
+    display: block;
+  }
+}
+@media (max-width: 500px) {
+  .dropdown .dropdown-content {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .dropdown .toggle-content {
+    display: block;
+  }
 }
 footer {
   width: 100%;

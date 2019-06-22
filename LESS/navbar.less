@@ -13,6 +13,11 @@
     top: 0;
     width: 20rem;
     z-index: 10000;
+
+    @media @mobile {
+        height: 10vh;
+        width: 100%;
+    }
 }
 
 #navbar > .inner-text {
@@ -63,4 +68,40 @@
 
 #navbar + #wrapper {
     margin-left: 20rem;
+
+    @media @mobile {
+        margin-left: 0;
+    }
+}
+
+
+// DropDown CSS
+.dropdown {
+
+
+    // Hides the hamburger icon until in mobile.
+    .dropdown-button {
+        display: none;
+
+        @media @mobile {
+            display: block;
+        }
+    }
+
+    .dropdown-content {
+
+        @media @mobile {
+            display: none;
+        }
+    }
+
+
+    // Used with JS to toggle the nav items on and off
+    .toggle-content {
+
+        @media @mobile {
+            display: block;
+        }
+    }
+
 }
