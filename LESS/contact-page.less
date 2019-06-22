@@ -17,10 +17,19 @@
             width: 100%;
             .flex();
             justify-content: space-evenly;
+
+            @media @mobile {
+                .flex(column);
+                align-items: center;
+            }
         }
 
         form {
             width: 40%;
+
+            @media @mobile {
+                width: 100%;
+            }
         }
 
         p {
@@ -44,16 +53,29 @@
         width: 100%;
         padding: 30px 0;
 
+        @media @mobile {
+            .flex(column);
+        }
+
         .name,
         .email {
             .flex(column);
             width: 48%;
+
+            @media @mobile {
+                width: 100%;
+                text-align: center;
+            }
         }
     }
 
     label {
         padding: 15px 15px 15px 0;
         font-size: 2rem;
+
+        @media @mobile {
+            font-size: 3rem;
+        }
     }
 
     input {
@@ -68,6 +90,10 @@
 
     .message {
         .flex(column);
+
+        @media @mobile {
+            text-align: center;
+        }
 
         textarea {
             height: 300px;
@@ -85,11 +111,19 @@
         margin-top: 30px;
         text-align: center;
 
+        @media @mobile {
+            width: 100%;
+        }
+
         input {
             color: @main-font;
             font-size: 2rem;
             padding: 20px 40px;
             cursor: pointer;
+
+            @media @mobile {
+                width: 100%;
+            }
         }
     }
 
@@ -99,6 +133,10 @@
         width: 25%;
         padding: 60px 0 0;
         margin-top: 35px;
+
+        @media @mobile {
+            width: 100%;
+        }
        
         .location, .phone-number, .email {
             .flex();
