@@ -456,8 +456,9 @@ label {
 }
 @media (max-width: 500px) {
   #navbar {
-    height: 10vh;
+    height: auto;
     width: 100%;
+    padding: 20px;
   }
 }
 #navbar > .inner-text {
@@ -508,6 +509,7 @@ label {
 @media (max-width: 500px) {
   #navbar + #wrapper {
     margin-left: 0;
+    margin-top: 80px;
   }
 }
 .dropdown .dropdown-button {
@@ -516,7 +518,13 @@ label {
 @media (max-width: 500px) {
   .dropdown .dropdown-button {
     display: block;
+    cursor: pointer;
+    padding: 10px;
   }
+}
+.dropdown .dropdown-button .fas {
+  font-size: 4rem;
+  color: #fff;
 }
 @media (max-width: 500px) {
   .dropdown .dropdown-content {
