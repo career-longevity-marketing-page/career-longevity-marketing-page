@@ -17,15 +17,11 @@ class DropDown {
                 this.content.classList.remove('toggle-content');
             }
         });
-
-
-
     }
-
+    
 
     toggle() {
         this.content.classList.toggle('toggle-content');
-
     }
 }
 
