@@ -14,7 +14,7 @@
     width: 20rem;
     z-index: 10000;
 
-    @media @mobile {
+    @media @tablet {
         height: auto;
         width: 100%;
         padding: 0;
@@ -35,6 +35,19 @@
 #navbar nav>ul {
     list-style: none;
     padding: 0;
+
+    @media @tablet {
+        .flex();
+        justify-content: space-around;
+        width: 100%;
+        margin: auto;
+    }
+
+    @media @mobile {
+        .flex(column);
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 #navbar nav>ul>li {
@@ -43,6 +56,12 @@
     opacity: 1;
     padding: 0;
     position: relative;
+
+    @media @tablet {
+        width: 25%;
+        margin: 0;
+        padding: 14px 0;
+    }
 }
 
 #navbar nav a {
@@ -71,7 +90,7 @@
 #navbar+#wrapper {
     margin-left: 20rem;
 
-    @media @mobile {
+    @media @tablet {
         margin-left: 0;
         margin-top: 70px;
     }

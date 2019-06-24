@@ -280,7 +280,7 @@ label {
   flex-direction: row;
   justify-content: space-evenly;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .contact .contact-container .contact-bottom {
     display: flex;
     flex-direction: column;
@@ -290,7 +290,7 @@ label {
 .contact .contact-container form {
   width: 40%;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .contact .contact-container form {
     width: 100%;
   }
@@ -391,7 +391,7 @@ label {
   padding: 60px 0 0;
   margin-top: 35px;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .contact address {
     width: 100%;
   }
@@ -417,21 +417,28 @@ label {
 }
 .testimonials {
   width: 100%;
+  text-align: center;
+}
+.testimonials h1 {
+  margin: auto;
+  margin-top: 60px;
+  color: #292929;
+}
+.testimonials hr {
+  margin-bottom: 60px;
+  width: 10%;
+  border: 2px solid #C61632;
+}
+@media (max-width: 500px) {
+  .testimonials hr {
+    width: 30%;
+  }
 }
 .testimonials .carousel-container {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.testimonials .carousel-container h1 {
-  margin-top: 60px;
-  color: #292929;
-}
-.testimonials .carousel-container hr {
-  margin-bottom: 60px;
-  width: 10%;
-  border: 2px solid #C61632;
 }
 .testimonials .carousel-container .circle-navigation {
   margin: 20px 0 50px;
@@ -440,34 +447,34 @@ label {
   margin: 0 5px;
   color: #00000071;
 }
-.carousel {
+.carousel-thing {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   width: 60%;
 }
-.carousel .arrow {
+.carousel-thing .arrow {
   font-size: 5rem;
   margin: 0 50px;
   color: #292929;
 }
-.carousel .main-content {
+.carousel-thing .main-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
-.carousel .main-content img {
+.carousel-thing .main-content img {
   width: 170px;
   margin-bottom: 60px;
   border-radius: 100px;
 }
-.carousel .main-content p {
+.carousel-thing .main-content p {
   margin: 30px 0;
   color: #a7a7a7;
 }
-.carousel .main-content p span {
+.carousel-thing .main-content p span {
   color: #C61632;
 }
 .cta {
@@ -488,6 +495,20 @@ label {
   font-size: 2rem;
   padding: 20px 40px;
   cursor: pointer;
+}
+#carouselExampleIndicators .fas {
+  font-size: 4rem;
+  color: #C61632;
+}
+#carouselExampleIndicators .carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #C61632;
+  opacity: 0.3;
+}
+#carouselExampleIndicators .carousel-indicators .active {
+  opacity: 1;
 }
 .wrapper.about-color {
   background-color: #1F4488;
@@ -554,7 +575,7 @@ label {
   width: 20rem;
   z-index: 10000;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   #navbar {
     height: auto;
     width: 100%;
@@ -574,12 +595,36 @@ label {
   list-style: none;
   padding: 0;
 }
+@media (max-width: 800px) {
+  #navbar nav > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    margin: auto;
+  }
+}
+@media (max-width: 500px) {
+  #navbar nav > ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 #navbar nav > ul > li {
   transform: translateY(0);
   margin: 1rem 0 0 0;
   opacity: 1;
   padding: 0;
   position: relative;
+}
+@media (max-width: 800px) {
+  #navbar nav > ul > li {
+    width: 25%;
+    margin: 0;
+    padding: 14px 0;
+  }
 }
 #navbar nav a {
   display: flex;
@@ -606,7 +651,7 @@ label {
 #navbar + #wrapper {
   margin-left: 20rem;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   #navbar + #wrapper {
     margin-left: 0;
     margin-top: 70px;

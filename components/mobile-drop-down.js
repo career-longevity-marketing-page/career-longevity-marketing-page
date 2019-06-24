@@ -7,10 +7,18 @@ class DropDown {
 
         this.content = this.element.querySelector('.dropdown-content');
 
-        this.button.addEventListener('click', event => this.toggle());
+        this.button.addEventListener('click', event => {
+            this.toggle();
+            event.stopPropagation();
+        });
 
+        document.addEventListener('click', event => {
+            if(this.content.classList.contains('toggle-content')) {
+                this.content.classList.remove('toggle-content');
+            }
+        });
     }
-
+    
 
     toggle() {
         this.content.classList.toggle('toggle-content');
