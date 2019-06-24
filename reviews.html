@@ -7,6 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>User Reviews</title>
 
+    <!-- BOOTSTRAP CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
     <!-- FONT AWESOME CDN -->
     <script src="https://kit.fontawesome.com/80f48857b0.js"></script>
 
@@ -19,11 +24,23 @@
     <!-- JAVSCRIPT IMPORT -->
     <!-- defer is needed unless you put the script at the bottom of the body tag -->
     <script defer src="/components/mobile-drop-down.js"></script>
+
+
+    <!-- BOOTSTRAP JS -->
+    <script defer src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
 </head>
 
 <body>
 
-    <div class="container">
+    <div class="container-reviews">
 
         <!-- NAVIGATION -->
         <section id="navbar">
@@ -50,38 +67,85 @@
 
             <section class="testimonials">
 
-                <div class="carousel-container">
+                <h1>TESTIMONIALS</h1>
+                <hr>
 
-                    <h1>TESTIMONIALS</h1>
-                    <hr>
-                    <div class="carousel">
+                <div id="carouselExampleIndicators" class="carousel slide" data-interval="false" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
 
-                        <div class="arrow left">
-                            <i class="fas fa-chevron-circle-left"></i>
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item active">
+
+                            <div class="carousel-container">
+                                <div class="carousel-thing">
+                                    <div class="main-content">
+                                        <img src="images/carousel-img1.png" alt="customer reviewing product image">
+                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit, eveniet
+                                            quibusdam dolor
+                                            amet alias fuga nisi quia aliquam consequatur expedita nam non debitis,
+                                            facere nesciunt
+                                            eius impedit vitae quis voluptatibus!</p>
+
+                                        <p> <span>FIRSTNAME LASTNAME</span> , Occupation</p>
+
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
 
-                        <div class="main-content">
-                            <img src="images/carousel-img1.png" alt="customer reviewing product image">
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit, eveniet quibusdam dolor
-                                amet alias fuga nisi quia aliquam consequatur expedita nam non debitis, facere nesciunt
-                                eius impedit vitae quis voluptatibus!</p>
+                        <div class="carousel-item">
+                            <div class="carousel-container">
+                                <div class="carousel-thing">
+                                    <div class="main-content">
+                                        <img src="images/carousel-img2.png" alt="customer reviewing product image">
+                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit, eveniet
+                                            quibusdam dolor
+                                            amet alias fuga nisi quia aliquam consequatur expedita nam non debitis,
+                                            facere nesciunt
+                                            eius impedit vitae quis voluptatibus!</p>
 
-                            <p> <span>FIRSTNAME LASTNAME</span> , Occupation</p>
+                                        <p> <span>FIRSTNAME LASTNAME</span> , Occupation</p>
 
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="arrow right">
-                            <i class="fas fa-chevron-circle-right"></i>
+                        <div class="carousel-item">
+                            <div class="carousel-container">
+                                <div class="carousel-thing">
+                                    <div class="main-content">
+                                        <img src="images/carousel-img3.png" alt="customer reviewing product image">
+                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit, eveniet
+                                            quibusdam dolor
+                                            amet alias fuga nisi quia aliquam consequatur expedita nam non debitis,
+                                            facere nesciunt
+                                            eius impedit vitae quis voluptatibus!</p>
+
+                                        <p> <span>FIRSTNAME LASTNAME</span> , Occupation</p>
+
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+
                     </div>
 
-                    <div class="circle-navigation">
-                        <i class="fas fa-circle"></i>
-                        <i class="fas fa-circle"></i>
-                        <i class="fas fa-circle"></i>
-                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <i class="fas fa-chevron-circle-left" aria-hidden="true"></i>
+                        <span class="sr-only">Previous</span>
+                    </a>
 
-
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <i class="fas fa-chevron-circle-right" aria-hidden="true"></i>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
 
             </section>
