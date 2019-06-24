@@ -429,6 +429,11 @@ label {
   width: 10%;
   border: 2px solid #C61632;
 }
+@media (max-width: 500px) {
+  .testimonials hr {
+    width: 30%;
+  }
+}
 .testimonials .carousel-container {
   width: 100%;
   display: flex;
