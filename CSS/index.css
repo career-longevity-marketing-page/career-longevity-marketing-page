@@ -280,7 +280,7 @@ label {
   flex-direction: row;
   justify-content: space-evenly;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .contact .contact-container .contact-bottom {
     display: flex;
     flex-direction: column;
@@ -290,7 +290,7 @@ label {
 .contact .contact-container form {
   width: 40%;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .contact .contact-container form {
     width: 100%;
   }
@@ -391,7 +391,7 @@ label {
   padding: 60px 0 0;
   margin-top: 35px;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .contact address {
     width: 100%;
   }
@@ -575,7 +575,7 @@ label {
   width: 20rem;
   z-index: 10000;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   #navbar {
     height: auto;
     width: 100%;
@@ -595,12 +595,36 @@ label {
   list-style: none;
   padding: 0;
 }
+@media (max-width: 800px) {
+  #navbar nav > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    margin: auto;
+  }
+}
+@media (max-width: 500px) {
+  #navbar nav > ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 #navbar nav > ul > li {
   transform: translateY(0);
   margin: 1rem 0 0 0;
   opacity: 1;
   padding: 0;
   position: relative;
+}
+@media (max-width: 800px) {
+  #navbar nav > ul > li {
+    width: 25%;
+    margin: 0;
+    padding: 14px 0;
+  }
 }
 #navbar nav a {
   display: flex;
@@ -627,7 +651,7 @@ label {
 #navbar + #wrapper {
   margin-left: 20rem;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   #navbar + #wrapper {
     margin-left: 0;
     margin-top: 70px;
