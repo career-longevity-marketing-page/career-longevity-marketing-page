@@ -556,8 +556,10 @@ body {
   text-align: center;
   color: black;
 }
-#about-us > div > div > h2 {
+#about-us > div > h2 {
   text-align: center;
+  color: black;
+  margin-top: 25px;
 }
 .stats {
   display: flex;
@@ -583,7 +585,7 @@ body {
   border-left: solid 1px rgba(255, 255, 255, 0.15);
 }
 .stats-open {
-  height: 870px;
+  height: 350px;
 }
 .box {
   width: 238px;
