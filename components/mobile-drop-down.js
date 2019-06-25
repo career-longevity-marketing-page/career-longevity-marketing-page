@@ -11,6 +11,7 @@ class DropDown {
 
         this.links = Array.from(this.links).map(link => new Link(link));
 
+
         this.button.addEventListener('click', event => {
             this.toggle();
             event.stopPropagation(); // must be used to prevent the document click event from running
@@ -26,6 +27,13 @@ class DropDown {
 
     toggle() {
         this.content.classList.toggle('toggle-content');
+        
+        if (this.content.classList.contains('toggle-content')) {
+            TweenMax.to(this.content, 0.5, {height: 272});
+        } else {
+            TweenMax.to(this.content, 0.5, {height: 0});
+        }
+        
     }
 }
 

@@ -746,7 +746,8 @@ body {
 }
 @media (max-width: 500px) {
   .dropdown .dropdown-content {
-    display: none;
+    overflow: hidden;
+    height: 0;
   }
 }
 @media (max-width: 500px) {
