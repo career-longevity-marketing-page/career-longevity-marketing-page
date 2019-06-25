@@ -28,6 +28,7 @@ class DropDown {
     toggle() {
         this.content.classList.toggle('toggle-content');
         
+        // animates the nav menus opening and closing
         if (this.content.classList.contains('toggle-content')) {
             TweenMax.to(this.content, 0.5, {height: 272});
         } else {
