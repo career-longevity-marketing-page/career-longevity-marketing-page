@@ -151,6 +151,21 @@ p {
 label {
   font-family: 'Roboto', sans-serif;
 }
+html,
+body {
+  height: 100%;
+  position: relative;
+}
+.container-home,
+.container-about,
+.container-reviews,
+.container-contact {
+  min-height: 100vh;
+  overflow: hidden;
+  display: block;
+  position: relative;
+  padding-bottom: 250px;
+}
 .wrapper.fullscreen {
   display: flex;
   flex-direction: column;
@@ -263,11 +278,23 @@ label {
   padding: 50px;
   background: #C61632;
   color: #fff;
+  height: 100vh;
+}
+@media (max-width: 800px) {
+  .contact {
+    height: auto;
+  }
 }
 .contact .contact-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 100px;
+}
+@media (max-width: 1100px) {
+  .contact .contact-container {
+    padding-top: 0;
+  }
 }
 .contact .contact-container .contact-top {
   display: flex;
@@ -279,9 +306,11 @@ label {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  padding-top: 100px;
 }
-@media (max-width: 800px) {
+@media (max-width: 1100px) {
   .contact .contact-container .contact-bottom {
+    padding-top: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -290,7 +319,7 @@ label {
 .contact .contact-container form {
   width: 40%;
 }
-@media (max-width: 800px) {
+@media (max-width: 1100px) {
   .contact .contact-container form {
     width: 100%;
   }
@@ -391,7 +420,7 @@ label {
   padding: 60px 0 0;
   margin-top: 35px;
 }
-@media (max-width: 800px) {
+@media (max-width: 1100px) {
   .contact address {
     width: 100%;
   }
@@ -682,7 +711,11 @@ label {
   }
 }
 footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
   width: 100%;
+  height: 250px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -692,6 +725,12 @@ footer {
 footer .social-icons {
   display: flex;
   padding: 40px;
+  margin-left: 20rem;
+}
+@media (max-width: 800px) {
+  footer .social-icons {
+    margin-left: 0;
+  }
 }
 footer .social-icons li {
   margin: 0 30px;
@@ -704,4 +743,10 @@ footer .social-icons li .fab {
 footer p {
   color: #fff;
   font-size: 1rem;
+  margin-left: 20rem;
+}
+@media (max-width: 800px) {
+  footer p {
+    margin-left: 0;
+  }
 }

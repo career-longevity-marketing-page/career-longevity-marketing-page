@@ -30,3 +30,26 @@
   label {
       font-family: @Roboto;
   }
+
+  html, body {
+      height: 100%;
+      position: relative;
+  }
+
+//  .container {
+//      min-height: 100vh;
+//      position: relative;
+//  }
+
+// #wrapper {
+//     height: 100%;
+//     padding-bottom: 250px;
+// }
+
+.container-home, .container-about, .container-reviews, .container-contact {
+    min-height: 100vh;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    padding-bottom: 250px; // size of the footer
+}
