@@ -206,7 +206,8 @@ label {
   border-radius: 0;
   display: block;
   position: relative;
-  width: 31rem;
+  width: 36rem;
+  height: 29rem;
 }
 .mvps > section {
   display: flex;
