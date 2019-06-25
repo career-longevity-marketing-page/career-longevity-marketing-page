@@ -4,9 +4,20 @@
     background: @contact-form;
     color: @main-font;
 
+    height: 100vh;
+
+    @media @tablet {
+        height: auto;
+    }
+
     .contact-container {
         .flex(column);
         align-items: center;
+        padding-top: 100px;
+
+        @media @desktop {
+            padding-top: 0;
+        }
 
         .contact-top {
             .flex(column);
@@ -17,17 +28,21 @@
             width: 100%;
             .flex();
             justify-content: space-evenly;
+            padding-top: 100px;
 
-            @media @tablet {
+            @media @desktop {
+                padding-top: 0;
                 .flex(column);
                 align-items: center;
             }
+
+
         }
 
         form {
             width: 40%;
 
-            @media @tablet {
+            @media @desktop {
                 width: 100%;
             }
 
@@ -40,7 +55,7 @@
 
         h2 {
             font-size: 7rem;
-            
+
         }
 
         hr {
@@ -135,11 +150,13 @@
         padding: 60px 0 0;
         margin-top: 35px;
 
-        @media @tablet {
+        @media @desktop {
             width: 100%;
         }
-       
-        .location, .phone-number, .email {
+
+        .location,
+        .phone-number,
+        .email {
             .flex();
             justify-content: space-between;
             align-items: center;
