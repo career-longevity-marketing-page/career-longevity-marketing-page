@@ -206,7 +206,8 @@ label {
   border-radius: 0;
   display: block;
   position: relative;
-  width: 31rem;
+  width: 36rem;
+  height: 29rem;
 }
 .mvps > section {
   display: flex;
@@ -510,11 +511,21 @@ label {
 #carouselExampleIndicators .carousel-indicators .active {
   opacity: 1;
 }
+.top-bar {
+  padding: 70px;
+  background: #1F4488;
+}
 .wrapper.about-color {
-  background-color: #1F4488;
+  background-color: #fff;
+}
+#about-us > div {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
 }
 #about-us > div > h1 {
   text-align: center;
+  color: black;
 }
 #about-us > div > div > h2 {
   text-align: center;
@@ -522,43 +533,63 @@ label {
 .stats {
   display: flex;
   flex-wrap: wrap;
-  border: solid 1px rgba(255, 255, 255, 0.15);
-  background: rgba(255, 255, 255, 0.05);
-}
-.stats section {
-  padding: 3rem 3rem 3rem 3rem;
-  width: 50%;
-  border-top: solid 1px rgba(255, 255, 255, 0.15);
+  justify-content: center;
+  margin: 20px -10%;
+  padding: 0 20px 25px;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  background-color: #1F4488;
   position: relative;
+  height: 75px;
+  overflow: hidden;
+  box-shadow: 2px 2px 2px lightgrey;
+}
+#about-us > div > div {
+  margin-top: 20px;
+}
+#about-us > div > div > div > h2 {
+  text-align: center;
 }
 .stats section:nth-child(1n) {
   border-left: solid 1px rgba(255, 255, 255, 0.15);
 }
-#about-us > div > div > section.stats-header {
-  position: relative;
-  padding: 0 !important;
-  width: 100% !important;
-  border-top: 0 !important;
-  border-left: 0 !important;
+.stats-open {
+  height: 870px;
 }
-#about-us > div > div > section.stats-header > h2 {
+.box {
+  width: 238px;
+  height: 180px;
+  box-sizing: content-box;
+  padding: 22px;
+  border: 1px solid #fff;
+  margin: 32px 15px;
+  background: transparent;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}
+#about-us > div > div > div > div > div > div > div.box > h3 {
+  font-size: 1.5rem;
+  font-family: 'Roboto', sans-serif;
   text-align: center;
 }
-#about-us > div > div > section > h3 {
-  text-align: center;
-  font-size: 2rem;
+#about-us > div > div > div > div > div > div > div.box > p {
+  font-size: 1.5rem;
+  font-family: 'Roboto', sans-serif;
 }
-#about-us > div > div > section.jp-img {
-  border-left: 0 !important;
-}
-#about-us > div > div > section.jp-1 {
-  border-left: 0 !important;
-}
-#about-us > div > div > section.jp-2 {
-  border-left: 0 !important;
-}
-#about-us > div > div > section.jp-3 {
-  border-left: 0 !important;
+#about-us > div > div > div > i {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+  transform: translate(-50%);
 }
 /* navbar */
 #navbar {
