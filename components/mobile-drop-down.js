@@ -7,7 +7,9 @@ class DropDown {
 
         this.content = this.element.querySelector('.dropdown-content');
 
-        // this.links = this.element.querySelectorAll('')
+        this.links = this.element.querySelectorAll('ul li a');
+
+        this.links = Array.from(this.links).map(link => new Link(link));
 
         this.button.addEventListener('click', event => {
             this.toggle();
@@ -24,6 +26,13 @@ class DropDown {
 
     toggle() {
         this.content.classList.toggle('toggle-content');
+    }
+}
+
+// Objects from this class will be created inside the constructor if the drop down class above
+class Link {
+    constructor(element) {
+        this.element = element;
     }
 }
 
