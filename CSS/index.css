@@ -688,6 +688,12 @@ body {
     padding: 14px 0;
   }
 }
+@media (max-width: 500px) {
+  #navbar nav > ul > li {
+    width: 100%;
+    padding: 0;
+  }
+}
 #navbar nav a {
   display: flex;
   flex-direction: column;
@@ -709,6 +715,11 @@ body {
   position: relative;
   text-decoration: none;
   text-transform: uppercase;
+}
+@media (max-width: 500px) {
+  #navbar nav a {
+    padding: 20px 0;
+  }
 }
 #navbar + #wrapper {
   margin-left: 20rem;

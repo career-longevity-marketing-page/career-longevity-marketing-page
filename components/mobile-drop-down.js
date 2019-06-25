@@ -7,9 +7,11 @@ class DropDown {
 
         this.content = this.element.querySelector('.dropdown-content');
 
+        // this.links = this.element.querySelectorAll('')
+
         this.button.addEventListener('click', event => {
             this.toggle();
-            event.stopPropagation();
+            event.stopPropagation(); // must be used to prevent the document click event from running
         });
 
         document.addEventListener('click', event => {
