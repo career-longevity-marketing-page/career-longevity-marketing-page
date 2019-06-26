@@ -252,7 +252,51 @@ body {
 #features > section > div > div > p {
   margin: 0 0 2.5rem 0;
 }
-#features > section > div > div > ul > li > a {
+#featureButton1 {
+  border: solid 2px;
+  border-color: black;
+  border-radius: 8px;
+  background-color: transparent;
+  color: black;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  height: calc(4rem + 2px);
+  letter-spacing: 0.2rem;
+  line-height: 4rem;
+  outline: 0;
+  padding: 0 1.75rem;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+  display: inline-block;
+}
+#featureButton2 {
+  border: solid 2px;
+  border-color: black;
+  border-radius: 8px;
+  background-color: transparent;
+  color: black;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  height: calc(4rem + 2px);
+  letter-spacing: 0.2rem;
+  line-height: 4rem;
+  outline: 0;
+  padding: 0 1.75rem;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+  display: inline-block;
+}
+#featureButton3 {
   border: solid 2px;
   border-color: black;
   border-radius: 8px;
