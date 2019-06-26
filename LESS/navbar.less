@@ -15,9 +15,15 @@
     z-index: 10000;
 
     @media @tablet {
-        height: auto;
+        height: 80px;
+        overflow: hidden;
         width: 100%;
         padding: 0;
+    }
+
+    @media @mobile {
+        overflow: hidden;
+        height: auto;
     }
 }
 
@@ -29,6 +35,10 @@
     min-height: 100%;
     opacity: 1;
     width: 100%;
+
+    @media @tablet {
+        min-height: 0;
+    }
 
 }
 
@@ -128,18 +138,27 @@
 
 
         @media @mobile {
-            display: block;
+            display: flex;
+            justify-content: center;
             cursor: pointer;
             padding: 20px;
+            height: 80px;
         }
 
         .fas {
+            position: absolute;
             font-size: 4rem;
             color: @hamburger-button;
+        }
+
+        // will be used with javascript later, needs to start out at 0 scale so that it can be scaled up
+        .fa-times {
+            transform: scale(0);
         }
     }
 
     .dropdown-content {
+        height: auto;
 
         @media @mobile {
             overflow: hidden;

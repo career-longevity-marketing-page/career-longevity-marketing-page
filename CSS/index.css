@@ -156,6 +156,9 @@ body {
   height: 100%;
   position: relative;
 }
+.contact-page-body {
+  background: #C61632;
+}
 .container-home,
 .container-about,
 .container-reviews,
@@ -323,7 +326,7 @@ body {
   padding: 50px;
   background: #C61632;
   color: #fff;
-  height: 100vh;
+  height: 100%;
 }
 @media (max-width: 800px) {
   .contact {
@@ -334,7 +337,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 100px;
 }
 @media (max-width: 1100px) {
   .contact .contact-container {
@@ -683,9 +685,16 @@ body {
 }
 @media (max-width: 800px) {
   #navbar {
-    height: auto;
+    height: 80px;
+    overflow: hidden;
     width: 100%;
     padding: 0;
+  }
+}
+@media (max-width: 500px) {
+  #navbar {
+    overflow: hidden;
+    height: auto;
   }
 }
 #navbar > .inner-text {
@@ -696,6 +705,11 @@ body {
   min-height: 100%;
   opacity: 1;
   width: 100%;
+}
+@media (max-width: 800px) {
+  #navbar > .inner-text {
+    min-height: 0;
+  }
 }
 #navbar nav > ul {
   list-style: none;
@@ -793,14 +807,23 @@ body {
 }
 @media (max-width: 500px) {
   .dropdown .dropdown-button {
-    display: block;
+    display: flex;
+    justify-content: center;
     cursor: pointer;
     padding: 20px;
+    height: 80px;
   }
 }
 .dropdown .dropdown-button .fas {
+  position: absolute;
   font-size: 4rem;
   color: #fff;
+}
+.dropdown .dropdown-button .fa-times {
+  transform: scale(0);
+}
+.dropdown .dropdown-content {
+  height: auto;
 }
 @media (max-width: 500px) {
   .dropdown .dropdown-content {
@@ -837,7 +860,7 @@ footer .social-icons {
 }
 footer .social-icons li {
   margin: 0 30px;
-  font-size: 2rem;
+  font-size: 4rem;
 }
 footer .social-icons li .fab {
   text-decoration: none;
@@ -845,7 +868,7 @@ footer .social-icons li .fab {
 }
 footer p {
   color: #fff;
-  font-size: 1rem;
+  font-size: 2rem;
   margin-left: 20rem;
 }
 @media (max-width: 800px) {
