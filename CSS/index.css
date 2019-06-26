@@ -769,9 +769,6 @@ body {
     display: block;
   }
 }
-.shrink:hover {
-  transform: scale(0.8);
-}
 footer {
   position: absolute;
   bottom: 0;
