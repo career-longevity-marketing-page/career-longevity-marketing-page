@@ -790,7 +790,7 @@ footer .social-icons {
 }
 footer .social-icons li {
   margin: 0 30px;
-  font-size: 2rem;
+  font-size: 4rem;
 }
 footer .social-icons li .fab {
   text-decoration: none;
@@ -798,7 +798,7 @@ footer .social-icons li .fab {
 }
 footer p {
   color: #fff;
-  font-size: 1rem;
+  font-size: 2rem;
   margin-left: 20rem;
 }
 @media (max-width: 800px) {

@@ -63,11 +63,6 @@ class DropDown {
         }
 
     }
-
-    hover() {
-        // TweenMax.to(this.buttonIcon, 1, {fontSize: "5rem"});
-
-    }
 }
 
 // Objects from this class will be created inside the constructor if the drop down class above
