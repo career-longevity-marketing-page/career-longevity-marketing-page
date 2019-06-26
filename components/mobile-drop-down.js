@@ -25,7 +25,12 @@ class DropDown {
             }
         });
 
-        this.button.addEventListener('mouseenter', event => this.hover());
+        window.addEventListener('resize', event => {
+            if(this.content.classList.contains('toggle-content')) {
+                this.content.classList.remove('toggle-content');
+                // this.content.style.height = 'auto';
+            } else {console.log('Wahh wahhh waaaaaaaaah');}
+        });
     }
 
 

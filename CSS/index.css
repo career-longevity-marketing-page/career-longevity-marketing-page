@@ -639,7 +639,8 @@ body {
 }
 @media (max-width: 800px) {
   #navbar {
-    height: auto;
+    height: 80px;
+    overflow: hidden;
     width: 100%;
     padding: 0;
   }
@@ -647,6 +648,7 @@ body {
 @media (max-width: 500px) {
   #navbar {
     overflow: hidden;
+    height: auto;
   }
 }
 #navbar > .inner-text {
@@ -657,6 +659,11 @@ body {
   min-height: 100%;
   opacity: 1;
   width: 100%;
+}
+@media (max-width: 800px) {
+  #navbar > .inner-text {
+    min-height: 0;
+  }
 }
 #navbar nav > ul {
   list-style: none;
@@ -754,6 +761,9 @@ body {
 }
 .dropdown .dropdown-button .fa-times {
   transform: scale(0);
+}
+.dropdown .dropdown-content {
+  height: auto;
 }
 @media (max-width: 500px) {
   .dropdown .dropdown-content {
