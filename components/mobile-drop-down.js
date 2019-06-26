@@ -24,6 +24,8 @@ class DropDown {
                 this.toggle();
             }
         });
+
+        this.button.addEventListener('mouseenter', event => this.hover());
     }
     
 
@@ -33,14 +35,21 @@ class DropDown {
         // animates the nav menus opening and closing
         if (this.content.classList.contains('toggle-content')) {
             TweenMax.to(this.content, 0.5, {height: 272});
+
+            this.buttonIcon.classList.remove('fa-bars');
+            this.buttonIcon.classList.add('fa-times');
         } else {
             TweenMax.to(this.content, 0.5, {height: 0});
+            
+            this.buttonIcon.classList.remove('fa-times');
+            this.buttonIcon.classList.add('fa-bars');
         }
         
     }
 
     hover() {
-        TweenMax.to(this.buttonIcon, 1, {width: 100})
+        // TweenMax.to(this.buttonIcon, 1, {fontSize: "5rem"});
+       
     }
 }
 
