@@ -19,6 +19,10 @@
         width: 100%;
         padding: 0;
     }
+
+    @media @mobile {
+        overflow: hidden;
+    }
 }
 
 #navbar>.inner-text {
@@ -116,14 +120,22 @@
 
 
         @media @mobile {
-            display: block;
+            display: flex;
+            justify-content: center;
             cursor: pointer;
             padding: 20px;
+            height: 80px;
         }
 
         .fas {
+            position: absolute;
             font-size: 4rem;
             color: @hamburger-button;
+        }
+
+        // will be used with javascript later, needs to start out at 0 scale so that it can be scaled up
+        .fa-times {
+            transform: scale(0);
         }
     }
 

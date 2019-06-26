@@ -644,6 +644,11 @@ body {
     padding: 0;
   }
 }
+@media (max-width: 500px) {
+  #navbar {
+    overflow: hidden;
+  }
+}
 #navbar > .inner-text {
   display: flex;
   flex-direction: column;
@@ -735,14 +740,20 @@ body {
 }
 @media (max-width: 500px) {
   .dropdown .dropdown-button {
-    display: block;
+    display: flex;
+    justify-content: center;
     cursor: pointer;
     padding: 20px;
+    height: 80px;
   }
 }
 .dropdown .dropdown-button .fas {
+  position: absolute;
   font-size: 4rem;
   color: #fff;
+}
+.dropdown .dropdown-button .fa-times {
+  transform: scale(0);
 }
 @media (max-width: 500px) {
   .dropdown .dropdown-content {

@@ -5,7 +5,7 @@ class DropDown {
 
         this.button = this.element.querySelector('.dropdown-button');
 
-        this.buttonIcon = this.element.querySelector('.fa-bars');
+        this.buttonIcon = this.element.querySelectorAll('.fas');
 
         this.content = this.element.querySelector('.dropdown-content');
 
@@ -20,36 +20,53 @@ class DropDown {
         });
 
         document.addEventListener('click', event => {
-            if(this.content.classList.contains('toggle-content')) {
+            if (this.content.classList.contains('toggle-content')) {
                 this.toggle();
             }
         });
 
         this.button.addEventListener('mouseenter', event => this.hover());
     }
-    
+
 
     toggle() {
         this.content.classList.toggle('toggle-content');
-        
+
         // animates the nav menus opening and closing
         if (this.content.classList.contains('toggle-content')) {
-            TweenMax.to(this.content, 0.5, {height: 272});
+            TweenMax.to(this.content, 0.5, {
+                height: 272
+            });
 
-            this.buttonIcon.classList.remove('fa-bars');
-            this.buttonIcon.classList.add('fa-times');
+            TweenMax.to(this.buttonIcon[0], 0.3, {
+                scale: 0,
+                opacity: 0
+            });
+            TweenMax.to(this.buttonIcon[1], 0.3, {
+                scale: 1,
+                opacity: 1
+            });
+
         } else {
-            TweenMax.to(this.content, 0.5, {height: 0});
-            
-            this.buttonIcon.classList.remove('fa-times');
-            this.buttonIcon.classList.add('fa-bars');
+            TweenMax.to(this.content, 0.5, {
+                height: 0
+            });
+
+            TweenMax.to(this.buttonIcon[0], 0.3, {
+                scale: 1,
+                opacity: 1
+            });
+            TweenMax.to(this.buttonIcon[1], 0.3, {
+                scale: 0,
+                opacity: 0
+            });
         }
-        
+
     }
 
     hover() {
         // TweenMax.to(this.buttonIcon, 1, {fontSize: "5rem"});
-       
+
     }
 }
 
