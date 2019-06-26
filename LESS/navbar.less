@@ -96,6 +96,18 @@
     }
 }
 
+#navbar nav a:hover {
+    transform: scale(1.3);
+    color: @nav-hover;
+    animation-name: colorChange;
+    animation-duration: 0.7s;
+}
+
+@keyframes colorChange {
+    from {color: @white;}
+    to {color: @nav-hover;}
+}
+
 #navbar+#wrapper {
     margin-left: 20rem;
 
