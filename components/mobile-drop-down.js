@@ -19,7 +19,7 @@ class DropDown {
 
         document.addEventListener('click', event => {
             if(this.content.classList.contains('toggle-content')) {
-                this.content.classList.remove('toggle-content');
+                this.toggle();
             }
         });
     }
