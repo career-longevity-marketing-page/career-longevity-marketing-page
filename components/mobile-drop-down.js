@@ -5,6 +5,8 @@ class DropDown {
 
         this.button = this.element.querySelector('.dropdown-button');
 
+        this.buttonIcon = this.element.querySelector('.fa-bars');
+
         this.content = this.element.querySelector('.dropdown-content');
 
         this.links = this.element.querySelectorAll('ul li a');
@@ -35,6 +37,10 @@ class DropDown {
             TweenMax.to(this.content, 0.5, {height: 0});
         }
         
+    }
+
+    hover() {
+        TweenMax.to(this.buttonIcon, 1, {width: 100})
     }
 }
 
