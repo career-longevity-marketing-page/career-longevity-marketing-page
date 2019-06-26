@@ -7,14 +7,19 @@ class DropDown {
 
         this.content = this.element.querySelector('.dropdown-content');
 
+        this.links = this.element.querySelectorAll('ul li a');
+
+        this.links = Array.from(this.links).map(link => new Link(link));
+
+
         this.button.addEventListener('click', event => {
             this.toggle();
-            event.stopPropagation();
+            event.stopPropagation(); // must be used to prevent the document click event from running
         });
 
         document.addEventListener('click', event => {
             if(this.content.classList.contains('toggle-content')) {
-                this.content.classList.remove('toggle-content');
+                this.toggle();
             }
         });
     }
@@ -22,6 +27,21 @@ class DropDown {
 
     toggle() {
         this.content.classList.toggle('toggle-content');
+        
+        // animates the nav menus opening and closing
+        if (this.content.classList.contains('toggle-content')) {
+            TweenMax.to(this.content, 0.5, {height: 272});
+        } else {
+            TweenMax.to(this.content, 0.5, {height: 0});
+        }
+        
+    }
+}
+
+// Objects from this class will be created inside the constructor if the drop down class above
+class Link {
+    constructor(element) {
+        this.element = element;
     }
 }
 
