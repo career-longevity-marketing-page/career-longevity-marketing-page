@@ -27,9 +27,8 @@ class DropDown {
 
         window.addEventListener('resize', event => {
             if(this.content.classList.contains('toggle-content')) {
-                this.content.classList.remove('toggle-content');
-                // this.content.style.height = 'auto';
-            } else {console.log('Wahh wahhh waaaaaaaaah');}
+                this.toggle();
+            } 
         });
     }
 
