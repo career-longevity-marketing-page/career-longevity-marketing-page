@@ -3,7 +3,7 @@ class Form {
     constructor(formElement) {
         this.element = formElement;
 
-    // Creating the children classes
+        // Creating the children classes
         this.labels = this.element.querySelectorAll('label').forEach(label => new Label(label));
         this.textAreas = this.element.querySelectorAll('textarea').forEach(texarea => new TextArea(texarea));
 
@@ -27,7 +27,7 @@ class Form {
         this.submit = this.element.querySelector('input[type="submit"]');
 
 
-    
+
         this.element.addEventListener('submit', event => {
             // Stops the submit button from refreshing the page when clicked
             event.preventDefault();
@@ -56,27 +56,21 @@ class Input extends Form {
         // since currently text and email are the only input types that need to be validated
         // with an 'input' listener, we use an if statement to make sure that only those types of
         // elements get the event listener added onto it
-        if (this.element.type === 'text' || this.element.type === 'email') {
+        if (this.element.type === 'text') {
             this.element.addEventListener('input', event => {
                 // Here we call the validation method and put in the parameter of the element
                 // type. We do this because the email and text should have different criteria for
                 // validating
-                this.validation(this.element.type);
+                this.validation();
             });
         }
     }
 
     // The validation function should check the different inputs and determine if
     // they are valid or not (i.e. has the user entered text into the input? etc.)
-    validation(inputType) {
-        // Validate for text
-        if (inputType === 'text') {
+    validation() {
+        console.log(this.element.checkValidity());
 
-        } 
-        // Validate for email
-        else if (inputType === 'email') {
-            
-        }
 
     }
 
