@@ -52,28 +52,7 @@ class Input extends Form {
         super(inputElement);
 
         this.element = inputElement;
-
-        // since currently text and email are the only input types that need to be validated
-        // with an 'input' listener, we use an if statement to make sure that only those types of
-        // elements get the event listener added onto it
-        if (this.element.type === 'text') {
-            this.element.addEventListener('input', event => {
-                // Here we call the validation method and put in the parameter of the element
-                // type. We do this because the email and text should have different criteria for
-                // validating
-                this.validation();
-            });
-        }
     }
-
-    // The validation function should check the different inputs and determine if
-    // they are valid or not (i.e. has the user entered text into the input? etc.)
-    validation() {
-        console.log(this.element.checkValidity());
-
-
-    }
-
 
 }
 
