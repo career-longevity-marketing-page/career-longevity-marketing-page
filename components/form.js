@@ -20,6 +20,19 @@ class Form {
 
         // Creating the new button objects
         this.buttons = this.buttons.forEach(button => new Button(button));
+
+
+        // Since there is only ever going to be one submit button per form i can just
+        // grab the single input element inside the form that has the type of submit
+        this.submit = this.element.querySelector('input[type="submit"]');
+
+
+    
+        this.element.addEventListener('submit', event => {
+            // Stops the submit button from refreshing the page when clicked
+            event.preventDefault();
+
+        });
     }
 }
 
@@ -39,8 +52,35 @@ class Input extends Form {
         super(inputElement);
 
         this.element = inputElement;
-        console.log(this.element)
+
+        // since currently text and email are the only input types that need to be validated
+        // with an 'input' listener, we use an if statement to make sure that only those types of
+        // elements get the event listener added onto it
+        if (this.element.type === 'text' || this.element.type === 'email') {
+            this.element.addEventListener('input', event => {
+                // Here we call the validation method and put in the parameter of the element
+                // type. We do this because the email and text should have different criteria for
+                // validating
+                this.validation(this.element.type);
+            });
+        }
     }
+
+    // The validation function should check the different inputs and determine if
+    // they are valid or not (i.e. has the user entered text into the input? etc.)
+    validation(inputType) {
+        // Validate for text
+        if (inputType === 'text') {
+
+        } 
+        // Validate for email
+        else if (inputType === 'email') {
+            
+        }
+
+    }
+
+
 }
 
 // TEXT AREA
