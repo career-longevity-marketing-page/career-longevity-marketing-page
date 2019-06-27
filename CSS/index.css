@@ -407,12 +407,12 @@ body {
     text-align: center;
   }
 }
-.contact label {
+.contact .contact-label {
   padding: 15px 15px 15px 0;
   font-size: 2rem;
 }
 @media (max-width: 500px) {
-  .contact label {
+  .contact .contact-label {
     font-size: 3rem;
   }
 }
@@ -439,26 +439,19 @@ body {
   border: 2px solid #c7c7c7;
   border-radius: 8px;
   padding: 15px 10px;
-  font-size: 3rem;
+  font-size: 2rem;
   color: #fff;
 }
-.contact .button {
+.contact .contact-button {
   margin-top: 30px;
   text-align: center;
-}
-@media (max-width: 500px) {
-  .contact .button {
-    width: 100%;
-  }
-}
-.contact .button input {
   color: #fff;
   font-size: 2rem;
   padding: 20px 40px;
   cursor: pointer;
 }
 @media (max-width: 500px) {
-  .contact .button input {
+  .contact .contact-button {
     width: 100%;
   }
 }
