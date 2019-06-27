@@ -3,17 +3,22 @@ class Form {
     constructor(formElement) {
         this.element = formElement;
 
-        // Creating the children classes
+    // Creating the children classes
         this.labels = this.element.querySelectorAll('label').forEach(label => new Label(label));
-        this.inputs = this.element.querySelectorAll('input').forEach(input => new Input(input));
         this.textAreas = this.element.querySelectorAll('textarea').forEach(texarea => new TextArea(texarea));
 
-        // In this case my buttons are an input, so what i need to do is filter through
-        // the inputs that i have already found and only return the ones with a type
-        // of button
-        this.buttons = Array.from(this.inputs).filter(input => input.type === 'button');
+        // this.inputs should only give back input elements that are NOT buttons, buttons
+        // will have its own individual class
+        this.inputs = Array.from(this.element.querySelectorAll('input')).filter(input => input.type !== 'button')
 
-        // Creating new button objects
+        // Creating the new input objects
+        this.inputs = this.inputs.forEach(input => new Input(input));
+
+        // The buttons here are a type of input so after query selecting for all the inputs I
+        // Change it to an array and then filter out only the inputs that have a type of 'button'
+        this.buttons = Array.from(this.element.querySelectorAll('input')).filter(input => input.type === 'button');
+
+        // Creating the new button objects
         this.buttons = this.buttons.forEach(button => new Button(button));
     }
 }
@@ -24,6 +29,7 @@ class Label extends Form {
         super(labelElement);
 
         this.element = labelElement;
+
     }
 }
 
@@ -33,6 +39,7 @@ class Input extends Form {
         super(inputElement);
 
         this.element = inputElement;
+        console.log(this.element)
     }
 }
 
