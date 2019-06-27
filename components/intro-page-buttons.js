@@ -1,3 +1,12 @@
+const introButton1 = document.querySelector('#introButton1');
+    introButton1.addEventListener('mouseenter', function(event){
+        event.target.style.background = 'orange';
+});
+
+introButton1.addEventListener('mouseleave', function(event){
+    event.target.style.background = 'none';
+});
+
 const featureButton1 = document.querySelector('#featureButton1');
     featureButton1.addEventListener('mouseenter', function(event){
         event.target.style.background = 'orange';
