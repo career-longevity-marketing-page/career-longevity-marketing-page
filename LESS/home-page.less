@@ -25,6 +25,72 @@
     color: @main-font;
 }
 
+#introduction {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .iphone-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        margin-right: 100px;
+
+        .bottom-side {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            padding: 50px 40px;
+            text-align: center;
+
+            h2 {
+                color: @main-font;
+                padding: 10px 0;
+            }
+
+            button {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background: black;
+                color: @main-font;
+                border-style: none;
+                padding: 5px 15px;
+                margin-top: 10px;
+                border-radius: 5px;
+                width: 50%;
+                cursor: pointer;
+            }
+
+            .fa-apple {
+                font-size: 3rem;
+                padding: 5px;
+            }
+
+            .btn-text {
+                display: flex;
+                flex-direction: column;
+
+                p {
+                    margin: 0;
+                }
+
+                .top {
+                   font-size: 1rem;     
+                }
+            }
+
+        }
+
+        img {
+            width: 300px;
+        }
+    }
+}
+
 #introduction > div > h1 {
     margin: 0 0 1.5rem 0;
 
