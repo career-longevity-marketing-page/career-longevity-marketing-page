@@ -165,7 +165,8 @@ body {
 .container-contact {
   min-height: 100vh;
   overflow: hidden;
-  display: block;
+  display: flex;
+  flex-direction: column;
   position: relative;
   padding-bottom: 250px;
 }
@@ -732,6 +733,14 @@ body {
     height: 585px;
   }
 }
+.stats-open.dev-box {
+  height: 425px;
+}
+@media (max-width: 500px) {
+  .stats-open.dev-box {
+    height: 735px;
+  }
+}
 .box {
   width: 238px;
   height: 180px;
@@ -746,23 +755,54 @@ body {
     margin: 14px 15px;
   }
 }
+.jp-top,
+.mj-top {
+  height: 253px;
+}
+.jp-mid,
+.mj-mid,
+.jp-bottom,
+.mj-bottom {
+  text-align: left;
+  margin-bottom: 14px;
+}
 .row {
   display: flex;
   flex-direction: row;
 }
 @media (max-width: 500px) {
   .row {
-    display: block;
+    display: flex;
+    flex-direction: column;
   }
 }
 .column {
   display: flex;
   flex-direction: column;
 }
+.about-image {
+  max-width: 100%;
+  height: auto;
+}
 #about-us > div > div > div > div > div > div > div.box > h3 {
   font-size: 2rem;
   font-family: 'Roboto', sans-serif;
   text-align: center;
+}
+#about-us > div > div > div > div > div > div > div.middle > h3 {
+  font-size: 2rem;
+  font-family: 'Roboto', sans-serif;
+  text-align: left;
+  margin-bottom: 14px;
+}
+#about-us > div > div > div > div > div > div > div.bottom > h3 {
+  font-size: 2rem;
+  font-family: 'Roboto', sans-serif;
+  text-align: left;
+  margin-bottom: 14px;
+}
+.top > h3 {
+  margin-top: 4px;
 }
 #about-us > div > div > div > div > div > div > div.box > p {
   font-size: 1.5rem;
@@ -810,7 +850,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  transform: translateY(0);
   min-height: 100%;
   opacity: 1;
   width: 100%;
@@ -842,7 +881,6 @@ body {
   }
 }
 #navbar nav > ul > li {
-  transform: translateY(0);
   margin: 1rem 0 0 0;
   opacity: 1;
   padding: 0;
@@ -861,17 +899,36 @@ body {
     padding: 0;
   }
 }
+.logo {
+  opacity: 1;
+  width: 30%;
+  border: 0;
+  outline: 0;
+  padding: 1.2rem 0;
+  position: relative;
+}
+@media (max-width: 800px) {
+  #navbar > div > nav > ul > li:nth-child(1) {
+    width: 15%;
+    margin: 0;
+    padding: 0;
+  }
+}
+@media (max-width: 500px) {
+  #navbar > div > nav > ul > li:nth-child(1) {
+    width: 15%;
+    padding: 0;
+  }
+}
 #navbar nav a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  transform: translateY(0);
   min-height: 100%;
   opacity: 1;
   width: 100%;
   border: 0;
   color: #fff;
-  display: block;
   font-size: 1.6rem;
   font-family: 'Anton', sans-serif;
   font-weight: normal;

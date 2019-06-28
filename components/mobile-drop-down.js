@@ -38,8 +38,8 @@ class DropDown {
 
         // animates the nav menus opening and closing
         if (this.content.classList.contains('toggle-content')) {
-            TweenMax.to(this.content, 0.5, {
-                height: 272
+            TweenMax.to(this.content, 0.4, {
+                height: 342
             });
 
             TweenMax.to(this.buttonIcon[0], 0.3, {
