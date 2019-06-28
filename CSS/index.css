@@ -399,6 +399,7 @@ body {
   background: #C61632;
   color: #fff;
   height: 100%;
+  /* Change Autocomplete styles in Chrome*/
 }
 @media (max-width: 800px) {
   .contact {
@@ -479,12 +480,12 @@ body {
     text-align: center;
   }
 }
-.contact label {
+.contact .contact-label {
   padding: 15px 15px 15px 0;
   font-size: 2rem;
 }
 @media (max-width: 500px) {
-  .contact label {
+  .contact .contact-label {
     font-size: 3rem;
   }
 }
@@ -495,6 +496,33 @@ body {
   border-radius: 8px;
   font-size: 2rem;
   color: #fff;
+}
+.contact input::placeholder,
+.contact textarea::placeholder {
+  color: #fff;
+  opacity: 0.5;
+}
+.contact input:invalid {
+  border: 2px solid #ff002b;
+}
+.contact input:focus {
+  outline: none;
+  border-color: white;
+  border-width: 2px;
+}
+.contact input:-webkit-autofill,
+.contact input:-webkit-autofill:hover,
+.contact input:-webkit-autofill:focus,
+.contact textarea:-webkit-autofill,
+.contact textarea:-webkit-autofill:hover,
+.contact textarea:-webkit-autofill:focus,
+.contact select:-webkit-autofill,
+.contact select:-webkit-autofill:hover,
+.contact select:-webkit-autofill:focus {
+  border: 2px solid #c7c7c7;
+  color: #fff;
+  -webkit-text-fill-color: #fff;
+  transition: background-color 5000s ease-in-out 0s;
 }
 .contact .message {
   display: flex;
@@ -511,26 +539,23 @@ body {
   border: 2px solid #c7c7c7;
   border-radius: 8px;
   padding: 15px 10px;
-  font-size: 3rem;
+  font-size: 2.7rem;
   color: #fff;
 }
-.contact .button {
+.contact .message textarea:focus {
+  outline: none;
+  border: 2px solid white;
+}
+.contact .contact-button {
   margin-top: 30px;
   text-align: center;
-}
-@media (max-width: 500px) {
-  .contact .button {
-    width: 100%;
-  }
-}
-.contact .button input {
   color: #fff;
   font-size: 2rem;
   padding: 20px 40px;
   cursor: pointer;
 }
 @media (max-width: 500px) {
-  .contact .button input {
+  .contact .contact-button {
     width: 100%;
   }
 }

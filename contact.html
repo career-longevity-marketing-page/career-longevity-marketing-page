@@ -23,6 +23,7 @@
     <!-- JAVSCRIPT IMPORT -->
     <!-- defer is needed unless you put the script at the bottom of the body tag -->
     <script defer src="components/mobile-drop-down.js"></script>
+    <script defer src="components/form.js"></script>
 
 </head>
 
@@ -76,25 +77,24 @@
                             <div class="name-email">
 
                                 <div class="name">
-                                    <label for="name">Name</label>
-                                    <input type="text" name="name" id="name">
+                                    <label class="contact-label" for="name">Name</label>
+                                    <input placeholder="name required" type="text" name="name" id="name" required>
                                 </div>
 
                                 <div class="email">
-                                    <label for="email">Email</label>
-                                    <input type="text" name="email" id="email">
+                                    <label class="contact-label" for="email">Email</label>
+                                    <input placeholder="email required" type="email" name="email" id="email" required>
                                 </div>
 
                             </div>
 
                             <div class="message">
-                                <label for="message">Message</label>
-                                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                                <label class="contact-label" for="message">Message</label>
+                                <textarea placeholder="please enter a message" name="message" id="message" cols="30" rows="10"></textarea>
                             </div>
 
-                            <div class="button">
-                                <input type="button" value="Send Message">
-                            </div>
+                            <input class="contact-button" type="submit" value="Send Message">
+
                         </form>
 
                         <address>

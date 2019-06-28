@@ -13,7 +13,7 @@
     .contact-container {
         .flex(column);
         align-items: center;
-        
+
 
         @media @desktop {
             padding-top: 0;
@@ -85,9 +85,10 @@
         }
     }
 
-    label {
+    .contact-label {
         padding: 15px 15px 15px 0;
         font-size: 2rem;
+        @color: @main-font;
 
         @media @mobile {
             font-size: 3rem;
@@ -101,6 +102,39 @@
         border-radius: 8px;
         font-size: 2rem;
         color: @main-font;
+
+
+    }
+
+    input::placeholder, textarea::placeholder {
+        color: @main-font;
+        opacity: 0.5;
+    }
+
+    input:invalid {
+        border: 2px solid @invalid-state;
+    }
+
+    input:focus {
+        outline: none;
+        border-color: white;
+        border-width: 2px;
+    }
+
+    /* Change Autocomplete styles in Chrome*/
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    textarea:-webkit-autofill,
+    textarea:-webkit-autofill:hover,
+    textarea:-webkit-autofill:focus,
+    select:-webkit-autofill,
+    select:-webkit-autofill:hover,
+    select:-webkit-autofill:focus {
+        border: 2px solid #c7c7c7;
+        color: #fff;
+        -webkit-text-fill-color: #fff;
+        transition: background-color 5000s ease-in-out 0s;
     }
 
 
@@ -117,29 +151,27 @@
             border: 2px solid rgb(199, 199, 199);
             border-radius: 8px;
             padding: 15px 10px;
-            font-size: 3rem;
+            font-size: 2.7rem;
             color: @main-font;
+
+        }
+
+        textarea:focus {
+            outline: none;
+            border: 2px solid white;
         }
     }
 
-
-    .button {
+    .contact-button {
         margin-top: 30px;
         text-align: center;
+        color: @main-font;
+        font-size: 2rem;
+        padding: 20px 40px;
+        cursor: pointer;
 
         @media @mobile {
             width: 100%;
-        }
-
-        input {
-            color: @main-font;
-            font-size: 2rem;
-            padding: 20px 40px;
-            cursor: pointer;
-
-            @media @mobile {
-                width: 100%;
-            }
         }
     }
 
