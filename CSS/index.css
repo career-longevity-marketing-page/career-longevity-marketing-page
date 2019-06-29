@@ -193,6 +193,7 @@ body {
   max-width: 100%;
   width: 75rem;
   color: #fff;
+  position: relative;
 }
 @media (max-width: 800px) {
   .wrapper > .inner-text {
@@ -262,6 +263,7 @@ body {
 }
 #introduction .iphone-section img {
   width: 300px;
+  position: relative;
 }
 #introduction > div > h1 {
   margin: 0 0 1.5rem 0;
@@ -1059,6 +1061,7 @@ body {
 }
 .dropdown .dropdown-content {
   height: auto;
+  position: relative;
 }
 @media (max-width: 500px) {
   .dropdown .dropdown-content {
