@@ -194,11 +194,21 @@ body {
   width: 75rem;
   color: #fff;
 }
+@media (max-width: 800px) {
+  .wrapper > .inner-text {
+    text-align: center;
+  }
+}
 #introduction {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+@media (max-width: 800px) {
+  #introduction {
+    flex-direction: column;
+  }
 }
 #introduction .iphone-section {
   display: flex;
@@ -206,6 +216,11 @@ body {
   align-items: center;
   width: 50%;
   margin-right: 100px;
+}
+@media (max-width: 800px) {
+  #introduction .iphone-section {
+    margin-right: 0;
+  }
 }
 #introduction .iphone-section .bottom-side {
   display: flex;
@@ -228,7 +243,7 @@ body {
   padding: 5px 15px;
   margin-top: 10px;
   border-radius: 5px;
-  width: 50%;
+  width: 150px;
   cursor: pointer;
 }
 #introduction .iphone-section .bottom-side .fa-apple {
