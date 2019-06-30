@@ -903,7 +903,7 @@ body {
 #about-us > div > div > div.stats.hobby-box.stats-open > div > div.vl {
   margin-top: 65px;
   border-left: 3px solid #fff;
-  height: 164px;
+  height: 152px;
 }
 @media (max-width: 500px) {
   #about-us > div > div > div.stats.hobby-box.stats-open > div > div.vl {
